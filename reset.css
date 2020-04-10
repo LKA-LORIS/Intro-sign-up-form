@@ -1,0 +1,26 @@
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p, a, img, small, strong
+b, form, label, article, figure, footer, header, section {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, figure, footer, header, section, img, a, small {
+	display: block;
+}
+
+input, button {
+	margin:0;
+	padding:0;
+	border:0;
+	background-color: inherit;
+	box-shadow: inherit;
+	outline:none;
+	resize:none;
+}
+
+body {
+	line-height: 1;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Frontend Mentor | Intro component with sign up form</title>
+</head>
+
+<body>
+
+    <!-- PRELOADER -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+
+    <!-- MODAL SUCCESS -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Successful registration !!</h2>
+            </div>
+            <div class="modal-body">
+                <p>Feel free to love if you find the challenge to your liking</p></br>
+                <p>See you soon for a new challenge...</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="container">
+        <div class="inner-container">
+
+            <!-- BLOC LEFT -->
+            <div class="intro-lead">
+                <h1>Learn to code by watching others</h1>
+                <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but
+                    understanding how developers think is invaluable.</p>
+            </div>
+
+            <!-- BLOC RIGHT -->
+            <div class="intro-form">
+
+                <div class="intro-suggest">
+                    <p><span>Try it free 7 days</span>&nbsp;<span>then $20/mo. thereafter</span></p>
+                </div>
+
+                <form method="POST" name="formulaire" id="form-signin">
+                    <div class="form-container">
+
+                        <!-- FIRST NAME-->
+                        <div class="form-group">
+                            <label for="firstname"></label>
+                            <div class="form-input-group">
+                                <input id="firstname" name="firstname" type="text" placeholder="First Name">
+                                <img class="icon-error" src="./images/icon-error.svg" alt="icon error">
+                            </div>
+                            <small class="invalid-feedback"></small>
+                        </div>
+
+                        <!-- LAST NAME-->
+                        <div class="form-group">
+                            <label for="lastname"></label>
+                            <div class="form-input-group">
+                                <input id="lastname" name="lastname" type="text" placeholder="Last Name">
+                                <img class="icon-error" src="./images/icon-error.svg" alt="icon error">
+                            </div>
+                            <small class="invalid-feedback"></small>
+                        </div>
+
+                        <!-- EMAIL ADDRESS -->
+                        <div class="form-group">
+                            <label for="email"></label>
+                            <div class="form-input-group">
+                                <input id="email" name="email" type="email" placeholder="Email Address">
+                                <img class="icon-error" src="./images/icon-error.svg" alt="icon error">
+                            </div>
+                            <small class="invalid-feedback"></small>
+                        </div>
+
+                        <!-- PASSWORD -->
+                        <div class="form-group">
+                            <label for="password"></label>
+                            <div class="form-input-group">
+                                <input id="password" name="password" type="password" placeholder="Password">
+                                <img class="icon-error" src="./images/icon-error.svg" alt="icon error">
+                            </div>
+                            <small class="invalid-feedback"></small>
+                        </div>
+
+                        <button type="submit">Claim your free trial</button>
+                        <small class="form-condition">By clicking the button, you are agreeing to our <a href="#">Terms
+                                and Services</a></small>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
